@@ -24,7 +24,7 @@ public class NumberUtils {
 
     public Integer getMinimalValueV2() {
         int minValue = this.numbers.get(START_VALUE);
-        for (int number: this.numbers) {
+        for (int number : this.numbers) {
             if (minValue > number) {
                 minValue = number;
             }
@@ -37,4 +37,13 @@ public class NumberUtils {
                 .min(Comparator.naturalOrder())
                 .orElse(START_VALUE);
     }
+
+//    public Integer bubbleSort() {
+//        Integer firstElement = this.numbers.get(START_VALUE);
+//        for (Integer number : this.numbers) {
+//            if (firstElement > number) {
+//
+//            }
+//        }
+//    }
 }

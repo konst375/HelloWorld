@@ -83,7 +83,7 @@ abstract class AbstractQueue implements Queue {
     public int pop() {
         if (empty()) {
             System.out.println("queue is empty");
-            return 0;
+            System.exit(-1);
         }
         int x = queue[head];
         head = (head + 1) % maxSize;

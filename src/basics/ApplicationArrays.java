@@ -1,8 +1,7 @@
 package basics;
 
-import basics.Queue.DynamicQueue;
-import basics.Queue.Queue;
-import basics.Queue.StaticQueue;
+import basics.Stack.Stack;
+import basics.Stack.StaticStack;
 
 public class ApplicationArrays {
     public static void main(String[] args) {

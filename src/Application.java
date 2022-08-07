@@ -1,8 +1,6 @@
-import basics.FindDivisors;
+import basics.Recursion.Recursion;
 
 public class Application {
     public static void main(String[] args) {
-        FindDivisors finder = new FindDivisors();
-        System.out.println(finder.findDivisorsByNumber(10));
     }
 }

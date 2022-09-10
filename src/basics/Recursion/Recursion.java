@@ -51,8 +51,7 @@ public class Recursion {
     }
 
     /**
-     * Creates an ascending sequence if from < to
-     * and a descending sequence if from > to
+     * Creates an ascending sequence if from < to and a descending sequence if from > to
      * @param from start of sequence
      * @param to end of sequence
      */
@@ -94,5 +93,20 @@ public class Recursion {
             return sum;
         }
         return sum % 10 + sumOfDigits(sum / 10);
+    }
+
+    /**
+     * Checks if a number is an exact power of two
+     * @param number number to check
+     */
+    public void exactPowerOfTwo(int number) {
+        if (Math.abs(number) == 2) {
+            stringResult = "yes";
+            return;
+        }
+        stringResult = "no";
+        if (Math.abs(number) % 2 == 0) {
+            exactPowerOfTwo(number / 2);
+        }
     }
 }

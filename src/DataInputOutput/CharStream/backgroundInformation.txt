@@ -1,0 +1,20 @@
+#if
+if (condition) instructions;
+else instructions;
+
+#try/catch
+try {
+instructions;
+} catch (Exception e) {
+instructions;
+}
+
+#for
+for (iterator; condition; incriminate iterator) {
+instructions;
+}
+
+#foreach
+for (value : list<value>) {
+instructions;
+}

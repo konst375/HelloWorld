@@ -1,10 +1,10 @@
-package DataInputOutput.ByteStream;
+package basics.DataInputOutput.ByteStream;
 
 import java.io.File;
 import java.util.Date;
 
 class ListOfFileNames {
-private static final String PATH_NAME = "src\\DataInputOutput\\ByteStream";
+private static final String PATH_NAME = "src\\basics.DataInputOutput\\ByteStream";
     public static void main(String[] args) {
         File file = new File(PATH_NAME);
         try {

@@ -1,4 +1,4 @@
-package DataInputOutput.CharStream;
+package basics.DataInputOutput.CharStream;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

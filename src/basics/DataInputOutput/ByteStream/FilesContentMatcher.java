@@ -1,4 +1,4 @@
-package DataInputOutput.ByteStream;
+package basics.DataInputOutput.ByteStream;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,8 +9,8 @@ class FilesContentMatcher {
         int j;
         int mismatchIndex;
 
-        try (FileInputStream inputFile1 = new FileInputStream("src\\DataInputOutput\\ByteStream\\first.txt");
-             FileInputStream inputFile2 = new FileInputStream("src\\DataInputOutput\\ByteStream\\second.txt")) {
+        try (FileInputStream inputFile1 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\first.txt");
+             FileInputStream inputFile2 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\second.txt")) {
             mismatchIndex = 0;
             do {
                 i = inputFile1.read();
@@ -31,8 +31,8 @@ class FilesContentMatcher {
             System.out.println("input/output error: " + e);
         }
 
-        try (FileInputStream inputFile1 = new FileInputStream("src\\DataInputOutput\\ByteStream\\first.txt");
-             FileInputStream inputFile2 = new FileInputStream("src\\DataInputOutput\\ByteStream\\second.txt")) {
+        try (FileInputStream inputFile1 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\first.txt");
+             FileInputStream inputFile2 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\second.txt")) {
             mismatchIndex = 0;
             do {
                 i = inputFile1.read();
@@ -53,8 +53,8 @@ class FilesContentMatcher {
             System.out.println("input/output error: " + e);
         }
 
-        try (FileInputStream inputFile1 = new FileInputStream("src\\DataInputOutput\\ByteStream\\first.txt");
-             FileInputStream inputFile2 = new FileInputStream("src\\DataInputOutput\\ByteStream\\second.txt")) {
+        try (FileInputStream inputFile1 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\first.txt");
+             FileInputStream inputFile2 = new FileInputStream("src\\basics.DataInputOutput\\ByteStream\\second.txt")) {
             mismatchIndex = 0;
             do {
                 i = inputFile1.read();

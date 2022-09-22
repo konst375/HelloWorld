@@ -1,6 +1,6 @@
 package basics.multitheading;
 
-public class MoreThreads {
+class MoreThreads {
     public static void main(String[] args) {
         MyThread myThread1 = MyThread.createAndStart("thread 1");
         MyThread myThread2 = MyThread.createAndStart("thread 2");

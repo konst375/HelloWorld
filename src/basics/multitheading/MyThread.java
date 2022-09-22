@@ -1,19 +1,19 @@
 package basics.multitheading;
 
-public class MyThread implements Runnable {
+class MyThread implements Runnable {
     private final Thread thread;
 
     private MyThread(String threadName) {
         thread = new Thread(this, threadName);
     }
 
-    public static MyThread createAndStart(String threadName) {
+    static MyThread createAndStart(String threadName) {
         MyThread newThread = new MyThread(threadName);
         newThread.thread.start();
         return newThread;
     }
 
-    public Thread getThread() {
+    Thread getThread() {
         return thread;
     }
 

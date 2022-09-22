@@ -1,8 +1,8 @@
 package basics.multitheading;
 
-public class MyThread2 extends Thread{
+class MyThread2 extends Thread{
 
-    public MyThread2(String name) {
+    MyThread2(String name) {
         super(name);
     }
 

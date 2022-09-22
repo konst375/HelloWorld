@@ -1,7 +1,7 @@
 package basics.multitheading;
 
-public class UseThreads {
-    public static void main(String[] args) {
+class UseThreads {
+    static void main(String[] args) {
         System.out.println("Main thread launched");
         MyThread.createAndStart("secondThread");
 

@@ -1,6 +1,6 @@
 package basics.Queue;
 
-public class DynamicQueue extends AbstractQueue {
+public class DynamicQueue<T> extends AbstractQueue<T> {
     private static final int COEFFICIENT_OF_DILATION = 2;
 
     public DynamicQueue(int size) {
@@ -8,7 +8,7 @@ public class DynamicQueue extends AbstractQueue {
     }
 
     @Override
-    public void push(int input) {
+    public void push(T input) {
         if (full()) {
             increaseSizeOfQueue();
             System.out.println("queue has been extended");
@@ -18,9 +18,9 @@ public class DynamicQueue extends AbstractQueue {
 
     private void increaseSizeOfQueue() {
         int extendedSize = getMaxSize() * COEFFICIENT_OF_DILATION;
-        int [] extendedQueue = new int[extendedSize];
+        Object [] extendedQueue = new Object[extendedSize];
         setMaxSize(extendedSize);
         System.arraycopy(getQueue(), 0, extendedQueue, 0, getQueue().length);
-        setQueue(extendedQueue);
+        super.setQueue(extendedQueue);
     }
 }

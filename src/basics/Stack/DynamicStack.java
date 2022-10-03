@@ -1,6 +1,6 @@
 package basics.Stack;
 
-public class DynamicStack extends AbstractStack {
+public class DynamicStack<T> extends AbstractStack<T> {
     private static final int COEFFICIENT_OF_DILATION = 2;
 
     public DynamicStack(int size) {
@@ -8,7 +8,7 @@ public class DynamicStack extends AbstractStack {
     }
 
     @Override
-    public void push(int input) {
+    public void push(T input) {
         if (full()) {
             increaseSizeOfStack();
             System.out.println("stack has been extended");
@@ -18,7 +18,7 @@ public class DynamicStack extends AbstractStack {
 
     private void increaseSizeOfStack() {
         int extendedSize = size() * COEFFICIENT_OF_DILATION;
-        int[] extendedStack = new int[extendedSize];
+        Object[] extendedStack = new Object[extendedSize];
         setMaxSize(extendedSize);
         System.arraycopy(getStack(), 0, extendedStack, 0, getStack().length);
         setStack(extendedStack);

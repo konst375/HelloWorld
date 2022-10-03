@@ -1,7 +1,7 @@
 package basics.Stack;
 
-abstract class AbstractStack implements Stack {
-    private int[] stack;
+abstract class AbstractStack<T> implements Stack<T> {
+    private Object[] stack;
     private int top;
     private int currentSize;
     private int maxSize;
@@ -10,11 +10,11 @@ abstract class AbstractStack implements Stack {
         this.maxSize = maxSize;
     }
 
-    public void setStack(int[] stack) {
+    public void setStack(Object[] stack) {
         this.stack = stack;
     }
 
-    public int[] getStack() {
+    public Object[] getStack() {
         return stack;
     }
 
@@ -39,37 +39,39 @@ abstract class AbstractStack implements Stack {
     }
 
     public AbstractStack(int size) {
-        stack = new int[size];
+        stack = new Object[size];
         maxSize = size;
         top = -1;
     }
 
     @Override
-    public void push(int input) {
+    public void push(T input) {
         top = (top + 1) % maxSize;
         stack[top] = input;
         currentSize++;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public int pop() {
+    public T pop() {
         if (empty()) {
             System.out.println("stack is empty");
             System.exit(-1);
         }
-        int x = stack[top];
+        T x = (T) stack[top];
         top = (top - 1) % maxSize;
         currentSize--;
         return x;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public int peek() {
+    public T peek() {
         if (empty()) {
             System.out.println("stack is empty");
             System.exit(-1);
         }
-        return stack[top];
+        return (T) stack[top];
     }
 
     @Override

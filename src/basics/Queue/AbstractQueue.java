@@ -1,13 +1,13 @@
 package basics.Queue;
 
-abstract class AbstractQueue implements Queue {
-    private int[] queue; //main array
+abstract class AbstractQueue<T> implements Queue<T> {
+    private Object[] queue; //main array
     private int head; // the first element of the queue
     private int tail; // the last element of queue
     private int currentSize; //how much element in queue now
     private int maxSize; //max size of queue
 
-    public void setQueue(int[] queue) {
+    void setQueue(Object[] queue) {
         this.queue = queue;
     }
 
@@ -27,7 +27,7 @@ abstract class AbstractQueue implements Queue {
         this.maxSize = maxSize;
     }
 
-    public int[] getQueue() {
+    public Object[] getQueue() {
         return queue;
     }
 
@@ -48,18 +48,19 @@ abstract class AbstractQueue implements Queue {
     }
 
     public AbstractQueue(int size) {
-        queue = new int[size];
+        queue = new Object[size];
         maxSize = size;
         head = 0;
         tail = -1;
     }
 
-    public int peek() {
+    @SuppressWarnings("unchecked")
+    public T peek() {
         if (empty()) {
             System.out.println("queue is empty");
             System.exit(-1);
         }
-        return queue[head];
+        return (T) queue[head];
     }
 
     public boolean empty() {
@@ -74,18 +75,19 @@ abstract class AbstractQueue implements Queue {
         return currentSize;
     }
 
-    public void push(int input) {
+    public void push(T input) {
         tail = (tail + 1) % maxSize;
         queue[tail] = input;
         currentSize++;
     }
 
-    public int pop() {
+    @SuppressWarnings("unchecked")
+    public T pop() {
         if (empty()) {
             System.out.println("queue is empty");
             System.exit(-1);
         }
-        int x = queue[head];
+        T x = (T) queue[head];
         head = (head + 1) % maxSize;
         currentSize--;
         return x;

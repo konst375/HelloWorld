@@ -1,4 +1,4 @@
-package codewarsTasks;
+package codewarsTasks.numbers;
 
 public class HumanReadableTime {
     public static void main(String[] args) {

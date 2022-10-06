@@ -4,9 +4,10 @@
     <file url="file://$PROJECT_DIR$/src/basics/DataInputOutput/ByteStream/second.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/basics/multitheading/interactionOfThreads/MyThread.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/basics/multitheading/synchronization/MyThread.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/codewarsTasks/DuplicateEncoder.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/codewarsTasks/EnoughIsEnough.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/codewarsTasks/EnoughIsEnough.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/codewarsTasks/arrays/EnoughIsEnough.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/codewarsTasks/arrays/EnoughIsEnough.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/codewarsTasks/strings/DuplicateEncoder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/codewarsTasks/strings/DuplicateEncoder.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

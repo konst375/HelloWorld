@@ -1,4 +1,4 @@
-package codewarsTasks;
+package codewarsTasks.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

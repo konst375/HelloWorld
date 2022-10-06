@@ -1,4 +1,4 @@
-package codewarsTasks;
+package codewarsTasks.strings;
 
 public class DnaStrand {
     public static void main(String[] args) {

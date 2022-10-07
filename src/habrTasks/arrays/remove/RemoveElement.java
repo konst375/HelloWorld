@@ -1,4 +1,4 @@
-package habrTasks.arrays;
+package habrTasks.arrays.remove;
 
 import java.util.ArrayList;
 import java.util.Arrays;

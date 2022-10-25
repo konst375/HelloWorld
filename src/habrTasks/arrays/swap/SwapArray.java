@@ -1,6 +1,7 @@
 package habrTasks.arrays.swap;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class SwapArray {
     public static void main(String[] args) {

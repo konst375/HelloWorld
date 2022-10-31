@@ -17,12 +17,9 @@ public class Sum {
 //            }
 //            bufferedWriter.write(Integer.toString(sum));
             bufferedWriter.write(
-                    Long.toString(
-                            Arrays.stream(scanner.nextLine().split(" "))
+                    Long.toString(Arrays.stream(scanner.nextLine().split(" "))
                                     .mapToLong(Long::parseLong)
-                                    .sum()
-                    )
-            );
+                                    .sum()));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

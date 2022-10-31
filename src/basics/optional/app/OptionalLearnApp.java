@@ -1,7 +1,7 @@
 package basics.optional.app;
 
-import basics.optional.Person;
 import basics.optional.Headphones;
+import basics.optional.Person;
 
 import java.util.Optional;
 import java.util.stream.Stream;

@@ -1,5 +1,7 @@
 package Authorisation;
 
+import java.util.UUID;
+
 public class Application {
     public static void main(String[] args) {
         UserUI userUI = new UserUI();

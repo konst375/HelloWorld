@@ -1,7 +1,8 @@
 package basics.collections.hashMap;
 
-import java.util.*;
-import java.util.function.BiFunction;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 
 public class App {
     public static void main(String[] args) {

@@ -2,7 +2,6 @@ package basics.Cycle;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class FindDivisors {
     private static final Integer ZERO = 0;
